@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-import AppHeader from "./src/containers/AppHeader";
 import AppNavigator from "./src/stack/AppNavigator";
 import { Container } from "native-base";
 
@@ -32,11 +31,7 @@ export default class App extends Component {
       );
     }
 
-    return (
-      <Container>
-        <AppNavigator />
-      </Container>
-    );
+    return <AppNavigator />;
   }
 }
 

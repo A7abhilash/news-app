@@ -1,11 +1,12 @@
 import { createAppContainer } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
+import CategoryStack from "./CategoryStack";
 import HomeStack from "./HomeStack";
 
 const AppNavigator = createBottomTabNavigator(
   {
     Home: HomeStack,
-    About: HomeStack,
+    Categories: CategoryStack,
   },
   {
     tabBarOptions: {

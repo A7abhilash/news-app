@@ -1,14 +1,13 @@
 import React from "react";
-
 import { createStackNavigator } from "react-navigation-stack";
-import Home from "../screens/Home";
-import NewsDetails from "../screens/NewsDetails";
+import Category from "../screens/Category";
+import CategoryNews from "../screens/CategoryNews";
 import AppHeader from "../containers/AppHeader";
 
-const HomeStack = createStackNavigator(
+const CategoryStack = createStackNavigator(
   {
-    Home: {
-      screen: Home,
+    Category: {
+      screen: Category,
       navigationOptions: () => {
         return {
           headerTitle: () => <AppHeader />,
@@ -18,8 +17,8 @@ const HomeStack = createStackNavigator(
         };
       },
     },
-    "News Details": {
-      screen: NewsDetails,
+    "Category News": {
+      screen: CategoryNews,
     },
   },
   {
@@ -32,4 +31,4 @@ const HomeStack = createStackNavigator(
   }
 );
 
-export default HomeStack;
+export default CategoryStack;
