@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
 import AppNavigator from "./src/stack/AppNavigator";
-import { Container } from "native-base";
+import { Spinner } from "native-base";
 
 export default class App extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ export default class App extends Component {
     if (!this.state.isReady) {
       return (
         <View style={styles.container}>
-          <Text>Hello World!</Text>
+          <Spinner color="red" />
         </View>
       );
     }
@@ -38,7 +38,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#121212",
     alignItems: "center",
     justifyContent: "center",
   },
