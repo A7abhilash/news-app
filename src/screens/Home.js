@@ -16,7 +16,7 @@ export default function Home({ navigation }) {
   const searchQueryNews = (query) => {
     setUrlDetails({
       category: "",
-      query: query,
+      query,
     });
   };
 
