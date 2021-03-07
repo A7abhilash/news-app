@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { API_KEY } from "../api";
 
 export default function FetchNews(urlDetails) {
-  console.log(urlDetails);
+  // console.log(urlDetails);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [results, setResults] = useState([]);
@@ -25,7 +25,7 @@ export default function FetchNews(urlDetails) {
     fetch(BASEURL)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.status === "ok") {
           setResults(data.articles);
         } else {

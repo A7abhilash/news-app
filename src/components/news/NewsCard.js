@@ -15,7 +15,7 @@ export default function NewsCard({ item, openNews }) {
         <H3>{item.title}</H3>
       </CardItem>
       <CardItem style={{ flexDirection: "column" }}>
-        <Text>{item.author}</Text>
+        <Text>-{item.author}</Text>
         <Text>{new Date(item.publishedAt).toDateString()}</Text>
       </CardItem>
       <Button title="Read More" onPress={() => openNews(item)} />
