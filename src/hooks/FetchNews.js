@@ -28,10 +28,12 @@ export default function FetchNews(urlDetails) {
         console.log(data);
         if (data.status === "ok") {
           setResults(data.articles);
+        } else {
+          setError(true);
         }
       })
       .catch(() => setError(true))
       .finally(() => setLoading(false));
-  }, [urlDetails]);
+  }, [category, query]);
   return [loading, error, results];
 }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form, Input, Item, Label, Text } from "native-base";
-import { TouchableOpacity } from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
+import { Keyboard } from "react-native";
 
 export default function SearchQueryInput({ loading, searchQueryNews }) {
   const [text, setText] = useState("");
@@ -9,12 +8,13 @@ export default function SearchQueryInput({ loading, searchQueryNews }) {
   const handleSubmit = () => {
     // console.log(text);
     searchQueryNews(text);
+    Keyboard.dismiss();
   };
 
   return (
-    <Form style={{ flexDirection: "row" }}>
-      <Item floatingLabel style={{ flex: 6 }}>
-        <Label>Search news...</Label>
+    <Form style={{ flexDirection: "row", marginBottom: 10 }}>
+      <Item floatingLabel style={{ flex: 6, height: 50 }}>
+        <Label style={{ color: "white" }}>Search news...</Label>
         <Input
           onChangeText={(val) => setText(val)}
           style={{ color: "#eee" }}

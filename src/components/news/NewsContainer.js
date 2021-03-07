@@ -4,7 +4,7 @@ import NewsCard from "./NewsCard";
 
 export default function NewsContainer({ data, openNews }) {
   return (
-    <Container>
+    <Container style={{ backgroundColor: "#121212" }}>
       <DeckSwiper
         dataSource={data}
         renderItem={(item) => <NewsCard item={item} openNews={openNews} />}

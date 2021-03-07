@@ -42,5 +42,5 @@ export default function Home({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { backgroundColor: "#121212", padding: 10 },
+  container: { backgroundColor: "#121212", paddingHorizontal: 10 },
 });
