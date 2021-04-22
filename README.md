@@ -12,10 +12,10 @@
 </div>
 
 <div align="center">
-<img src="assets/screenshots/Screenshot_1619059383.png" style="border-radius:5px;" alt="Home" height="300">
-<img src="assets/screenshots/Screenshot_1619059410.png" style="border-radius:5px;" alt="Home" height="300">
-<img src="assets/screenshots/Screenshot_1619059796.png" style="border-radius:5px;" alt="Home" height="300">
-<img src="assets/screenshots/Screenshot_1619059425.png" style="border-radius:5px;" alt="Details" height="300">
-<img src="assets/screenshots/Screenshot_1619059806.png" style="border-radius:5px;" alt="Category List" height="300">
-<img src="assets/screenshots/Screenshot_1619059818.png" style="border-radius:5px;" alt="Category News" height="300">
+<img src="assets/screenshots/Screenshot_1619059383.png" style="border-radius:5px;" alt="Home" height="400">
+<img src="assets/screenshots/Screenshot_1619059410.png" style="border-radius:5px;" alt="Home" height="400">
+<img src="assets/screenshots/Screenshot_1619059796.png" style="border-radius:5px;" alt="Home" height="400">
+<img src="assets/screenshots/Screenshot_1619059425.png" style="border-radius:5px;" alt="Details" height="400">
+<img src="assets/screenshots/Screenshot_1619059806.png" style="border-radius:5px;" alt="Category List" height="400">
+<img src="assets/screenshots/Screenshot_1619059818.png" style="border-radius:5px;" alt="Category News" height="400">
 </div>
